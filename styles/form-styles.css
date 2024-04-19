@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.reg-form{
+.reg-form, .login-form{
     width: 420px;
     height: 500px;
     display: flex;
@@ -43,14 +43,14 @@
 
 
 .username-input{
-    background-image: url('./svgs/user-svgrepo-com.svg');
+    background-image: url('../svgs/user-svgrepo-com.svg');
 
 }
 .email-input{
-    background-image: url('./svgs/email-sign-svgrepo-com.svg');
+    background-image: url('../svgs/email-sign-svgrepo-com.svg');
 }
-.password-input{
-    background-image: url('./svgs/lock-svgrepo-com.svg');
+.password-input, .confirm-password-input{
+    background-image: url('../svgs/lock-svgrepo-com.svg');
     background-size: 8%;
     background-position-x: 5px;
 }
@@ -98,10 +98,10 @@
 }
 
 .with-google{
-    background-image: url('./svgs/google-svgrepo-com.svg');
+    background-image: url('../svgs/google-svgrepo-com.svg');
 }
 .with-fb{
-    background-image: url('./svgs/facebook-network-communication-internet-interaction-svgrepo-com.svg');
+    background-image: url('../svgs/facebook-network-communication-internet-interaction-svgrepo-com.svg');
     padding-left: 30px;
 }
 
