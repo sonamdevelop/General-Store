@@ -1,0 +1,6 @@
+.add-cart-btn, .buy-btn{
+    width: 18rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
