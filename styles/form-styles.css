@@ -1,0 +1,129 @@
+.form-container{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.reg-form, .login-form{
+    width: 420px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.form-and-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 225px;
+}
+
+.form-and-btns>input{
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f2f3f2;
+    font-size: 18px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: none;
+    padding-left: 35px;
+}
+
+
+
+.username-input{
+    background-image: url('../svgs/user-svgrepo-com.svg');
+
+}
+.email-input{
+    background-image: url('../svgs/email-sign-svgrepo-com.svg');
+}
+.password-input, .confirm-password-input{
+    background-image: url('../svgs/lock-svgrepo-com.svg');
+    background-size: 8%;
+    background-position-x: 5px;
+}
+::placeholder{
+    color: #1C1C1C;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+.line {
+    flex: 1;
+    border-top: 2px solid #d6d6d6;
+    margin: 0 10px;
+}
+
+.submit-btn{
+    width: 320px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.other-methods{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 95px;
+}
+
+.with-google, .with-fb{
+    width: 320px;
+    background: #fff;
+    height: 40px;
+    border: 2px solid #1C1C1C;
+    border-radius: 10px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 50px;
+}
+
+.with-google{
+    background-image: url('../svgs/google-svgrepo-com.svg');
+}
+.with-fb{
+    background-image: url('../svgs/facebook-network-communication-internet-interaction-svgrepo-com.svg');
+    padding-left: 30px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+}
+
+.title{
+    font-size: 120px;
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.desc{
+    position: absolute;
+    top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
