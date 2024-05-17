@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Cart</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
+<?php include('include/header.php'); ?> 
+
     <div class="cart d-flex justify-content-around align-items-center">
         <div class="cart-products">
             <div class="row row-cols-1 row-cols-md-2 mx-2 my-2 g-5" style="width: 40rem;">
@@ -60,5 +52,4 @@
             <button type="button" class="btn btn-dark my-2 fs-4">Checkout Now</button>
         </div>
     </div>
-</body>
-</html>
+    <?php include('include/footer.php'); ?> 
