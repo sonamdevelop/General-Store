@@ -1,0 +1,24 @@
+.img-contaimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-pro{
+    width: 400px;
+    height: 500px;
+}
+
+.small-product-img{
+    width: 125px;
+    height: 125px;
+}
+
+.more-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}

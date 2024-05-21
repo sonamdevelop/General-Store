@@ -42,6 +42,8 @@
             Featured Products
         </h1>
         <div class="row row-cols-1 row-cols-md-4 mx-2 my-2 g-5">
+            <?php for($i = 0; $i < 20; $i++) {
+                ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/product.png" class="card-img-top" alt="product image">
@@ -61,139 +63,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
+            <?php } ?>
         </div>
     </div>
 
@@ -230,6 +100,8 @@
             Deals for you
         </h1>
         <div class="row row-cols-1 row-cols-md-4 mx-5 my-2 g-5">
+            <?php for($i = 0; $i < 8; $i++) {
+                ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/deal-product.png" class="card-img-top" alt="product image">
@@ -249,140 +121,6 @@
                     </div>
                 </div>  
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./images/deal-product.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hike Shoes
-                        </h5>
-                        <p class="card-text">
-                            Elevate your style with our sleek and comfortable shoes, crafted with premium materials for lasting durability and effortless sophistication.
-                        </p>
-                        <p class="card-text">
-                            Price: <strike>&#x20B9;500</strike> &#x20B9;300
-                        </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>  
-            </div>
+            <?php } ?>
         </div>
-    </div>
-
-   
+            <?php include('include/footer.php'); ?> 
