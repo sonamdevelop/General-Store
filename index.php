@@ -1,5 +1,36 @@
 <?php include('include/header.php'); ?> 
 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbName = "generalstore";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbName);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+$sql = "SELECT product_id, name, description, price FROM products";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table><tr><th>ID</th><th>Name</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo "<tr><td>".$row["product_id"]."</td><td>".$row["name"]." ".$row["price"]."</td></tr>";
+    }
+    echo "</table>";
+  } else {
+    echo "0 results";
+  }
+
+?>
+
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,21 +73,17 @@
             Featured Products
         </h1>
         <div class="row row-cols-1 row-cols-md-4 mx-2 my-2 g-5">
-            <?php for($i = 0; $i < 20; $i++) {
+            <?php for($i = 0; $i < $result->num_rows; $i++) {
                 ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/product.png" class="card-img-top" alt="product image">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            Shirt
-                        </h5>
-                        <p class="card-text">
-                            Classic yet contemporary, our shirt features timeless elegance with a modern twist, crafted from premium materials for comfort and style.
-                        </p>
-                        <p class="card-text">
-                            Price: &#x20B9;500
-                        </p>
+                        <?php while($row = $result->fetch_assoc()) {
+                            echo "<h5 class='card-title'>
+                            </h5>".$row["name"]."<p class='card-text'></p>".$row["description"]."<p class='card-text'>
+                            Price: &#x20B9;
+                        </p>".$row["price"]; } ?>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                             <button class="btn btn-primary me-md-2" type="button">Go to cart</button>
                         </div>
